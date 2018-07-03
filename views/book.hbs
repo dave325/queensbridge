@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row">
+        <header class="col-12">
+            <div class="row">
+                <div id="logo" class="col-4">
+                    <img src="images/logo.png" />
+                </div>
+                <nav class="nav col-8 justify-content-end">
+                    <a class="nav-link active" href="/">Home</a>
+                    <a class="nav-link" href="/book">Books</a>
+                </nav>
+                <!-- End of nav tag -->
+            </div>
+            <!-- End of row div -->
+        </header>
+        <!-- End of header tag -->
+        <section class="col-12">
+            <button id="addBook">To add a book click here!</button>
+            <button id="retrieveBook">To retrieve a book click here!</button>
+            <h1>List of Books:</h1>
+            <p id="formInfo" class="alert alert-info"></p>
+            <form id="changeBook">
+                <div id="deleteBookInput">
+                    <label>Please input the ISBN string you want to delete:</label>
+                    <input name="isbn" type="text" id="deleteIsbn"/>
+                    <input type="submit" value="Delete" id="deleteSubmit" />
+                </div>
+                 <div id="updateBookInput">
+                    <label>Please input the ISBN string you want to update:</label>
+                    <input name="isbn" type="text" id="updateIsbn"/>
+                    <input type="submit" value="Update" id="updateSubmit"/>
+                </div>
+            </form>
+            <article id="bookList" class="row">
+
+            </article>
+        </section>
+        <footer class="col-12">
+            <div class="row">
+                <h3 class="col-3">Queens Public
+                    <span>Library</span>
+                </h3>
+                <nav class="nav col-9 justify-content-end">
+                    <a class="nav-link active" href="#">Log In </a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Books</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
+                <p>&copy Queens Public Library, 2018</p>
+            </div>
+        </footer>
+    </div>
+</div>

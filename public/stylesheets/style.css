@@ -1,0 +1,39 @@
+footer{
+  background-color:#54514A;
+  color:#FFF;
+  padding:10px;
+}
+footer p{
+  padding:10px 20px;
+}
+
+footer nav a{ 
+  color:#FFF;
+}
+
+#carouselControls{
+  margin-bottom:30px;
+}
+
+header nav{
+  margin-top:70px;
+}
+#carouselControls .carousel-inner .carousel-item img{
+  height:300px !important;
+}
+
+#logo img{
+  height:250px;
+}
+
+.book img{
+  height:200px;
+}
+
+section{
+  margin-bottom:30px;
+}
+
+#formInfo{
+  
+}
