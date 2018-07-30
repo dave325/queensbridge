@@ -58,7 +58,7 @@ window.onload = function () {
             // Ask user for information
             newBook.promptInformation();
             // Call the createBook route we decalred in route/index.js
-            fetch('/createBook', {
+            fetch('/api/createBook', {
                 method: "POST",
                 // Information we are passing to the route
                 body: JSON.stringify(newBook),
@@ -93,7 +93,7 @@ window.onload = function () {
             if (refresh) {
                 if (availableBooks.length === 0) {
                     // Call retrieve books
-                    fetch('/retrieveBook', {
+                    fetch('/api/retrieveBooks', {
                         method: "POST",
                         headers: {
                             'Accept': 'application/json',
@@ -133,7 +133,7 @@ window.onload = function () {
 
         function updateBook(book) {
             // find a way to get the container div
-            return fetch('/updateBook', {
+            return fetch('/api/updateBook', {
                 method: "POST",
                 body: JSON.stringify(book),
                 headers: {
@@ -231,7 +231,7 @@ window.onload = function () {
                 document.getElementById('formInfo').style.display = "block";
                 return;
             }
-            fetch('/deleteBook', {
+            fetch('/api/deleteBook', {
                 method: "POST",
                 body: JSON.stringify(curBook),
                 headers: {
