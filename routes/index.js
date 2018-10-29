@@ -6,11 +6,13 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Queens Library' });
 });
-/**
- * Add router.get('/book') after comment
- */
 
- /**
- * Add router.get('/login') after comment
- */
+router.get('/book',function(req,res,next){
+  res.render('book');
+});
+
+router.get('/login',function(req,res,next){
+  res.render('login');
+});
+
 module.exports = router;
