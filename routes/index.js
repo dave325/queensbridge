@@ -9,8 +9,7 @@ router.get('/', function(req, res, next) {
 /**
  * Add router.get('/book') after comment
  */
-
- /**
- * Add router.get('/login') after comment
- */
+router.get('/book', function(req, res, next) {
+  res.render('book', { title: 'Queens Library' });
+});
 module.exports = router;
